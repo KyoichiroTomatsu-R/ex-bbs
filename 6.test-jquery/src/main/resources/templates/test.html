@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+    <span id='name'>
+        戸松恭一朗
+    </span>
+    <button id='name_btn'>色を変える</button>
+    
+    <br>
+    年齢：
+    <input type="text" id='age' name='age'>
+    <button id='age_btn'>alert</button>
+
+    <br>
+    <button id='btn'>ダブルクリックできないボタン</button>
+    <br>
+    <select id='lang'>
+        <option value="0">初期選択</option>
+        <option value="1" id='ja'>Java</option>
+        <option value="2">JavaScript</option>
+    </select>
+    <span id='java'>system.out.println("HelloWorld")</span>
+    <span id='javascript'>console.log("HelloWorld")</span>
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./test.js"></script>
+</body>
+</html>

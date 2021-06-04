@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+私の名前は<span th:text="${user.name}">name</span>です
+<span th:if="${user.age} > 20" th:text="成人です"></span>
+<span th:unless="${user.age} > 20" th:text="未成年です"></span>
+
+<!-- 趣味は「<span th:each="hob:${user.hobby}" th:text="${hob}"></span>」です -->
+
+</body>
+</html>
